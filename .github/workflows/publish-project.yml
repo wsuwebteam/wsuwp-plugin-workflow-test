@@ -2,87 +2,40 @@ name: Publish Project
 
 on:
   workflow_dispatch:
+  # pull_request:
+  #   types:
+  #     - closed
+  #   branches:
+  #     - main
 
-env:
-  ARTIFACT_NAME: ${{ github.event.repository.name }}.${{ github.ref_name }}.${{ github.run_id }}.zip
+# Doesn't work setting as a variable for some reason, so the value is hard-coded throughout 😢.
+# May be fixed by Github down the road?
+# env:
+#   workflow_repo: wsuwebteam/wsuwp-workflows
 
 jobs:
   build-project:
-    runs-on: ubuntu-latest
     name: Build Project
-    outputs:
-      # artifact-name: ${{ steps.generate-name.outputs.artifact }}
-      artifact-name: ${{ env.ARTIFACT_NAME }}
-    steps:
-      - run: env
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-          cache: "npm"
-      - name: Run npm install, test, and build
-        run: |
-          npm ci
-          npm test
-          npm run build
-      # - name: Generate artifact name
-      #   id: generate-name
-      #   run: |
-      #     echo "::set-output name=artifact-name::${{ github.event.repository.name }}.${{ github.ref_name }}.${{ github.run_id }}.zip"
-      - name: Publish artifact
-        uses: actions/upload-artifact@v3
-        with:
-          # name: ${{ steps.generate-name.outputs.artifact }}
-          name: ${{ env.ARTIFACT_NAME }}
-          path: |
-            ${{ github.workspace }}
-            !node_modules
-            !./assets/src
-            !.git
-            !.github
-            !.editorConfig
-            !.gitignore
-            !package.json
-            !package-lock.json
-            !phpcs.ruleset.xml
-            !README.md
+    # if: github.event.pull_request.merged == true
+    uses: wsuwebteam/wsuwp-workflows/.github/workflows/build-project.yml@main
+    with:
+      node_version: 14
 
   release-project:
-    uses: wsuwebteam/wsuwp-workflows/.github/workflows/release-project.yml@1.x
+    name: Release Project
+    uses: wsuwebteam/wsuwp-workflows/.github/workflows/release-project.yml@main
     needs: build-project
     with:
-      artifact_name: ${{ needs.build-project.outputs.artifact-name }}
-      # artifact_name: ${{ github.event.repository.name }}.${{ github.ref_name }}.${{ github.run_id }}.zip
+      artifact_name: ${{ needs.build-project.outputs.artifact_name }}
+      workflow_repo: wsuwebteam/wsuwp-workflows
 
-  # release-project:
-  #   runs-on: ubuntu-latest
-  #   name: Release Project
-  #   needs: build-project
-  #   steps:
-  #     - name: Download build artifact
-  #       uses: actions/download-artifact@v3
-  #       with:
-  #         name: ${{ github.run_id }}
-  #         path: .
-  #     - name: Get repository name and version
-  #       run: |
-  #         REPO_NAME=${GITHUB_REPOSITORY#*\/}
-  #         PLUGIN_VERSION=$(grep -iF Version: ${REPO_NAME}.php | awk -F ':' '{print $2}' | awk '{ gsub(/^[ \t]+|[ \t]+$/, ""); print }')
-  #         echo REPO_NAME=${REPO_NAME} >> $GITHUB_ENV
-  #         echo VERSION=${PLUGIN_VERSION} >> $GITHUB_ENV
-  #     - name: Archive release artifact
-  #       uses: thedoctor0/zip-release@main
-  #       with:
-  #         type: 'zip'
-  #         path: .
-  #         filename: ${{ env.REPO_NAME }}.zip
-  #     - name: Create release
-  #       uses: softprops/action-gh-release@v1
-  #       with:
-  #         name: ${{ env.VERSION }} ${{ env.REPO_NAME }}
-  #         tag_name: ${{ env.VERSION }}
-  #         files: ${{ env.REPO_NAME }}.zip
-  #         generate_release_notes: true
-  #         token: ${{ github.token }}
+  deploy-project:
+    name: Deploy Project
+    uses: wsuwebteam/wsuwp-workflows/.github/workflows/deploy-project.yml@main
+    needs: release-project
+    with:
+      release_id: ${{ needs.release-project.outputs.release_id }}
+      release_asset: ${{ needs.release-project.outputs.release_asset }}
+      workflow_repo: wsuwebteam/wsuwp-workflows
+    secrets:
+      PAT: ${{ secrets.PAT }}
