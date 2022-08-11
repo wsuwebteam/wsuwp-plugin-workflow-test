@@ -1,0 +1,65 @@
+name: Publish Project | Dev
+
+on:
+  push:
+    branches:
+      - "1.x"
+
+env:
+  WORKFLOW_REPO: wsuwebteam/wsuwp-workflows
+
+jobs:
+  build-project:
+    name: Build Project
+    runs-on: ubuntu-latest
+    outputs:
+      run_id: ${{ steps.build-project.outputs.run_id }}
+      artifact_name: ${{ steps.build-project.outputs.artifact_name }}
+    steps:
+      - name: Checkout workflows repository
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ env.WORKFLOW_REPO }}
+          ref: main
+          path: workflows
+          token: ${{ secrets.PAT }}
+      - name: Build project
+        id: build-project
+        uses: ./workflows/.github/actions/build-project
+        with:
+          node_version: 14
+
+  deploy-project:
+    name: Deploy Project
+    runs-on: ubuntu-latest
+    needs: build-project
+    steps:
+      - name: Create event data
+        id: event-data
+        uses: actions/github-script@v6
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        with:
+          script: |
+            const eventData = {
+              "event_type": "Deploy - ${{ env.REPO_NAME }} | WIP",
+              "client_payload": {
+                "repo": {
+                  "owner": "${{ github.repository_owner }}",
+                  "repo": "${{ env.REPO_NAME }}"
+                },
+                "is_dev_deploy": true,
+                "run_id": "${{ needs.build-project.outputs.run_id }}",
+                "artifact_name": "${{ needs.build-project.outputs.artifact_name }}"
+              }
+            };
+
+            core.setOutput('data', JSON.stringify(eventData));
+      - name: Dispatch deploy event
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.PAT }}" \
+            --data '${{ steps.event-data.outputs.data }}' \
+            "https://api.github.com/repos/${{ env.WORKFLOW_REPO }}/dispatches"
+      - run: echo "The deployment process has been initiated. Check the status at https://github.com/${{ env.WORKFLOW_REPO }}/actions"
