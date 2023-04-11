@@ -20,4 +20,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
       - name: Push to S3
-        run: aws s3 sync ./assets/src/ s3://cdn-web-wsu/dans-test/${{ github.ref_name }}/test-folder/
+        run: aws s3 sync ./assets/src/ s3://cdn-web-wsu/designsystem/dans-test/${{ github.ref_name }}/test-folder/

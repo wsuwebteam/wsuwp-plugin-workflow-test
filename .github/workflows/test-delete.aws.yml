@@ -1,7 +1,7 @@
 name: "Test Delete AWS"
 
 on:
-  push:
+  delete:
     branches-ignore:
       - "main"
 
@@ -15,5 +15,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
-      - name: Push to S3
-        run: aws s3 rm s3://cdn-web-wsu/dans-test/${{ github.ref_name }}/
+      - name: Delete folder from S3
+        run: echo "Delete folder from S3 - ${{ github.ref_name }}"
+        # run: aws s3 rm s3://cdn-web-wsu/designsystem/dans-test/${{ github.ref_name }}/
