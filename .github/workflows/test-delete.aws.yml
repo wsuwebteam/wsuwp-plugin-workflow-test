@@ -12,17 +12,6 @@ jobs:
       - name: Github context
         run: |
           echo "${{ toJson(github) }}"
-          echo "${{ github.event }}"
-          echo "${{ github.event.ref }}"
-
-      # - name: Set Branch name
-      #   run: |
-      #     BRANCH=$(cat ${{ github.event_path }} | jq --raw-output '.ref')
-      #     echo "${{ github.repository }} has ${BRANCH} branch"
-      #     echo "::set-env name=STAGE::$(echo ${BRANCH})"
-
-      - name: Echo Branch name
-        run: echo Deleting from S3 ${{ env.BRANCH }}
 
       # - name: Configure AWS credentials
       #   uses: aws-actions/configure-aws-credentials@v1
@@ -33,4 +22,5 @@ jobs:
       - name: Delete folder from S3
         run: |
           echo "Delete folder from S3 - ${{ env.BRANCH }}"
+          echo "Delete folder from S3 - s3://cdn-web-wsu/designsystem/dans-test/${{ env.BRANCH }}/"
         # aws s3 rm s3://cdn-web-wsu/designsystem/dans-test/${{ github.ref_name }}/
