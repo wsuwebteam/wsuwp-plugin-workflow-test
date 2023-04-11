@@ -3,7 +3,11 @@ name: "Test Delete AWS"
 on:
   delete:
     branches-ignore:
+      - "protect"
       - "main"
+
+env:
+  BRANCH: ${{ github.event.ref }}
 
 jobs:
   default:
@@ -12,14 +16,14 @@ jobs:
       - name: Github context
         run: echo "${{ toJson(github) }}"
 
-      - name: Set Branch name
-        run: |
-          BRANCH=$(cat ${{ github.event_path }} | jq --raw-output '.ref')
-          echo "${{ github.repository }} has ${BRANCH} branch"
-          echo "::set-env name=STAGE::$(echo ${BRANCH})"
+      # - name: Set Branch name
+      #   run: |
+      #     BRANCH=$(cat ${{ github.event_path }} | jq --raw-output '.ref')
+      #     echo "${{ github.repository }} has ${BRANCH} branch"
+      #     echo "::set-env name=STAGE::$(echo ${BRANCH})"
 
       - name: Echo Branch name
-        run: echo Deleting from STAGE:$STAGE
+        run: echo Deleting from S3 ${{ env.REPO_NAME }}
 
       # - name: Configure AWS credentials
       #   uses: aws-actions/configure-aws-credentials@v1
@@ -29,5 +33,5 @@ jobs:
       #     aws-region: us-west-2
       - name: Delete folder from S3
         run: |
-          echo "Delete folder from S3 - ${{ github.ref_name }}"
+          echo "Delete folder from S3 - ${{ env.REPO_NAME }}"
         # aws s3 rm s3://cdn-web-wsu/designsystem/dans-test/${{ github.ref_name }}/
