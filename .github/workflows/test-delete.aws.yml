@@ -17,4 +17,4 @@ jobs:
           aws-region: us-west-2
       - name: Delete folder from S3
         run: echo "Delete folder from S3 - ${{ github.ref_name }}"
-        # run: aws s3 rm s3://cdn-web-wsu/dans-test/${{ github.ref_name }}/
+        # run: aws s3 rm s3://cdn-web-wsu/designsystem/dans-test/${{ github.ref_name }}/
