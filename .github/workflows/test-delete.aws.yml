@@ -5,6 +5,8 @@ on:
 
 jobs:
   default:
+    name: "Branch Deleted: ${{ github.event.ref }}"
+    if: ${{ github.event.ref != 'main' && github.event.ref != 'protect' }}
     runs-on: ubuntu-latest
     env:
       BRANCH: ${{ github.event.ref }}
