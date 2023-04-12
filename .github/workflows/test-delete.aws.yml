@@ -1,10 +1,9 @@
 name: "Test Delete AWS"
 
+run-name: Handle ${{github.event.ref_type}} ${{github.event.ref}} deletion
+
 on:
   delete:
-
-env:
-  IGNORED_BRANCHES: ("main", "development", "develop", "dev", "beta.release", "gh-pages", "beta", "bk", "2.x", "2.beta", "2.0.1", "2.0.0", "1", "1.x", "1.1")
 
 jobs:
   default:
@@ -23,8 +22,7 @@ jobs:
       #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       #     aws-region: us-west-2
-      - name: Delete folder from S3
+      - name: Delete ${{ env.BRANCH }} folder from S3
         run: |
-          echo "Delete folder from S3 - ${{ env.BRANCH }}"
-          echo "Delete folder from S3 - s3://cdn-web-wsu/designsystem/dans-test/${{ env.BRANCH }}/"
+          echo "Deleting folder from S3 | s3://cdn-web-wsu/designsystem/dans-test/${{ env.BRANCH }}/"
         # aws s3 rm s3://cdn-web-wsu/designsystem/dans-test/${{ github.ref_name }}/
