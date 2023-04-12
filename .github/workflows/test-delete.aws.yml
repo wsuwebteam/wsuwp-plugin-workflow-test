@@ -3,10 +3,12 @@ name: "Test Delete AWS"
 on:
   delete:
 
+env:
+  IGNORED_BRANCHES: ("main", "development", "develop", "dev", "beta.release", "gh-pages", "beta", "bk", "2.x", "2.beta", "2.0.1", "2.0.0", "1", "1.x", "1.1")
+
 jobs:
   default:
-    name: "Branch Deleted: ${{ github.event.ref }}"
-    if: ${{ github.event.ref != 'main' && github.event.ref != 'protect' }}
+    # if: ${{ !contains(fromJSON(env.IGNORED_BRANCHES), github.event.ref) }}
     runs-on: ubuntu-latest
     env:
       BRANCH: ${{ github.event.ref }}
