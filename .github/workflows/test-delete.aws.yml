@@ -8,7 +8,7 @@ env:
 
 jobs:
   default:
-    if: ${{ !contains(env.IGNORED_BRANCHES, github.event.ref) }}
+    if: ${{ !contains(fromJSON(env.IGNORED_BRANCHES), github.event.ref) }}
     runs-on: ubuntu-latest
     env:
       BRANCH: ${{ github.event.ref }}
