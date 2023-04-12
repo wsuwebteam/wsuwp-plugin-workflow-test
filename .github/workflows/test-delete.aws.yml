@@ -1,6 +1,6 @@
 name: "Test Delete AWS"
 
-run-name: Handle ${{github.event.ref_type}} ${{github.event.ref}} deletion
+run-name: Cleanup for ${{github.event.ref_type}} "${{github.event.ref}}"
 
 on:
   delete:
