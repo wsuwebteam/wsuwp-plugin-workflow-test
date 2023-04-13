@@ -17,7 +17,8 @@
             {
                 "assets": [
                     "CHANGELOG.md",
-                    "assets/dist/**"
+                    "assets/dist/**",
+                    "package.json"
                 ],
                 "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
