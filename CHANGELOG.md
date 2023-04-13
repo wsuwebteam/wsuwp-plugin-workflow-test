@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.0.0...v3.0.1) (2023-04-13)
+
+
+### Bug Fixes
+
+* **bob:** lose Bob ([d3e69ee](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/d3e69ee8e5121cde8983574378b50aa53441dfa5))
+
 # [3.0.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v2.2.0...v3.0.0) (2023-04-13)
 
 
