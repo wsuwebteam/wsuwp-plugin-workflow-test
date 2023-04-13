@@ -1,3 +1,28 @@
+# [3.0.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v2.2.0...v3.0.0) (2023-04-13)
+
+
+### Bug Fixes
+
+* **name change:** ann -> annie ([f109685](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/f1096850865e7c7d4a689ca461dd6c1e48846bdd))
+
+
+* Update name ([9522bb1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/9522bb1750dec4a0c4c74107d308dfc608f95617))
+
+
+### Features
+
+* **jane:** add jane ([5842bc6](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/5842bc652083a65bdc21925daaf6397282b7f09f))
+
+
+### Performance Improvements
+
+* **code:** remove some code ([a62f05a](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/a62f05a36617195cfaafbfc79abfe65e666dc59a))
+
+
+### BREAKING CHANGES
+
+* Uppercase bob
+
 # [2.2.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v2.1.0...v2.2.0) (2023-04-13)
 
 
