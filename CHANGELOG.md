@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.0.1...v3.0.2) (2023-04-13)
+
+
+### Bug Fixes
+
+* **something:** testing ([f5d848c](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/f5d848cb495ef76cf7a85c9948425f2324553072))
+
 ## [3.0.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.0.0...v3.0.1) (2023-04-13)
 
 
