@@ -13,17 +13,11 @@
         ],
         "@semantic-release/github",
         [
-            {
-                "assets": [
-                    "dist/**"
-                ]
-            },
             "@semantic-release/git",
             {
                 "assets": [
                     "CHANGELOG.md",
-                    "assets/dist/**",
-                    "package.json"
+                    "assets/dist/**"
                 ],
                 "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
