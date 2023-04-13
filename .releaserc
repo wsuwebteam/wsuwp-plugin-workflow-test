@@ -11,7 +11,12 @@
                 "changelogFile": "CHANGELOG.md"
             }
         ],
-        "@semantic-release/github",
+        [
+            "@semantic-release/github",
+            {
+                "assets": "assets/dist/**"
+            }
+        ],
         [
             "@semantic-release/git",
             {
