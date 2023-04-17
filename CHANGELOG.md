@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.1.0...v3.2.0) (2023-04-17)
+
+
+### Features
+
+* **awesome-feature:** Merge pull request [#1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/issues/1) from wsuwebteam/feature/awesome-stuff ([5a2d5c0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/5a2d5c0782c4a367ab0f6dcb9c351c0473765a67))
+
 # [3.1.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.0.2...v3.1.0) (2023-04-17)
 
 
