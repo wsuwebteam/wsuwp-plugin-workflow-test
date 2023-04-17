@@ -22,7 +22,11 @@ jobs:
       - name: Build
         run: npm run build
       - name: Create release asset
-        run: zip release.zip ./assets/dist/* -r
+        run: |
+          pushd ./assets/dist/
+          zip release.zip ./ -r
+          mv release.zip ~/
+          popd
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
