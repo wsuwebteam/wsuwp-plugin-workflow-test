@@ -1,3 +1,10 @@
+## [3.8.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.8.0...v3.8.1) (2023-04-17)
+
+
+### Reverts
+
+* Revert "feat: release asset label" ([b2bcfbd](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/b2bcfbdc68f21c73a0c9ed56dbf537f5c2efa096))
+
 # [3.8.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.7.0...v3.8.0) (2023-04-17)
 
 
