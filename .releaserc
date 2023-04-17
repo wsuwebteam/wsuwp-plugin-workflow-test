@@ -14,15 +14,14 @@
         [
             "@semantic-release/github",
             {
-                "assets": "assets/dist/**"
+                "assets": "release.zip"
             }
         ],
         [
             "@semantic-release/git",
             {
                 "assets": [
-                    "CHANGELOG.md",
-                    "assets/dist/**"
+                    "CHANGELOG.md"
                 ],
                 "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
