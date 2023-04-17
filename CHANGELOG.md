@@ -1,3 +1,10 @@
+# [3.8.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.7.0...v3.8.0) (2023-04-17)
+
+
+### Features
+
+* release asset label ([f3bff81](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/f3bff81103fb762e93a9fa5bc78f43c5c2b20b24))
+
 # [3.7.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.6.0...v3.7.0) (2023-04-17)
 
 
