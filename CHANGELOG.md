@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.2.0...v3.3.0) (2023-04-17)
+
+
+### Features
+
+* change to best feature ([#2](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/issues/2)) ([24ad990](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/24ad99072f9b842c7e1b3c6bf918d18e57a62d6b))
+
 # [3.2.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.1.0...v3.2.0) (2023-04-17)
 
 
