@@ -17,7 +17,8 @@
                 "assets": [
                     {
                         "path": "release.zip",
-                        "name": "release-${nextRelease.version}.zip"
+                        "name": "Release-${nextRelease.version}",
+                        "label": "(zip)"
                     }
                 ]
             }
