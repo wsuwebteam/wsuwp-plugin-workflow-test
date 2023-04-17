@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.3.0...v3.4.0) (2023-04-17)
+
+
+### Features
+
+* **boring:** change best to boring ([#3](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/issues/3)) ([263c9f8](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/263c9f84327636f35e69e2029c2054ea2b445a3c))
+
 # [3.3.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.2.0...v3.3.0) (2023-04-17)
 
 
