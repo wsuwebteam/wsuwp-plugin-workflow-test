@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.4.0...v3.4.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* **people:** remove people comments ([fa9d8c4](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/fa9d8c449d73e162ba51b621990cfb177953dd9d))
+
 # [3.4.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.3.0...v3.4.0) (2023-04-17)
 
 
