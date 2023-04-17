@@ -1,3 +1,15 @@
+# [3.7.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.6.0...v3.7.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* rename release ([4a5c6f1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/4a5c6f1c9eaaa1f19f25da691c9d18d3c37bfc37))
+
+
+### Features
+
+* trigger deploy ([f5831bb](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/f5831bbaca85ea4ccf6aadcfb5e8f6997499e99f))
+
 # [3.6.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.5.0...v3.6.0) (2023-04-17)
 
 
