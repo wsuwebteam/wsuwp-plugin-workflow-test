@@ -3,6 +3,21 @@
 
 ### Bug Fixes
 
+* **npm:** npm publish = true ([af837f5](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/af837f556c360f3825c938f7c4e7c71b65780c3f))
+* **npm:** registry setting ([ad51d68](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/ad51d6884d4401d8a91c302381dbd08851e692fb))
+* **npm:** registry setting ([e25d91a](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/e25d91ab8f226f4e8a6284863118f9e3591fafe0))
+* **oak:** remove change ([c1ce6cf](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/c1ce6cfa8b6e545ad21eda9b47e481b30f4c8b38))
+
+
+### Features
+
+* **npm:** setup npm release ([71e2ce1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/71e2ce1e4859942e0c92c1d0cbc7ac13f949d9d2))
+
+# [3.10.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.9.0...v3.10.0) (2023-06-02)
+
+
+### Bug Fixes
+
 * **npm:** registry setting ([ad51d68](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/ad51d6884d4401d8a91c302381dbd08851e692fb))
 * **npm:** registry setting ([e25d91a](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/e25d91ab8f226f4e8a6284863118f9e3591fafe0))
 * **oak:** remove change ([c1ce6cf](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/c1ce6cfa8b6e545ad21eda9b47e481b30f4c8b38))
