@@ -22,15 +22,7 @@
                 ]
             }
         ],
-        [
-            "@semantic-release/npm",
-            {
-                "publishConfig": {
-                    "registry": "https://npm.pkg.github.com",
-                    "tag": "latest"
-                }
-            }
-        ],
+        "@semantic-release/npm",
         [
             "@semantic-release/git",
             {
