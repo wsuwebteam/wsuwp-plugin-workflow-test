@@ -1,5 +1,5 @@
 {
-    "name": "wsuwp-plugin-workflow-test",
+    "name": "@wsuwebteam/wsuwp-plugin-workflow-test",
     "version": "0.0.0-semantic-release",
     "description": "",
     "main": "index.js",
