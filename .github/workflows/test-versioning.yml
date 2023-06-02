@@ -17,8 +17,8 @@ jobs:
           node-version: 18.x
       - name: Install dependencies
         run: npx ci
-      - name: Install semantic-release extra plugins
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git @semantic-release/npm
+      # - name: Install semantic-release extra plugins
+      #   run: npm install --save-dev @semantic-release/changelog @semantic-release/git @semantic-release/npm
       - name: Build
         run: npm run build
       - name: Create release asset
