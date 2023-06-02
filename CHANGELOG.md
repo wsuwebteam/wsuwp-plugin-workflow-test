@@ -1,3 +1,50 @@
+## [3.8.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.8.0...v3.8.1) (2023-04-17)
+
+
+### Reverts
+
+* Revert "feat: release asset label" ([b2bcfbd](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/b2bcfbdc68f21c73a0c9ed56dbf537f5c2efa096))
+
+# [3.8.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.7.0...v3.8.0) (2023-04-17)
+
+
+### Features
+
+* release asset label ([f3bff81](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/f3bff81103fb762e93a9fa5bc78f43c5c2b20b24))
+
+# [3.7.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.6.0...v3.7.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* rename release ([4a5c6f1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/4a5c6f1c9eaaa1f19f25da691c9d18d3c37bfc37))
+
+
+### Features
+
+* trigger deploy ([f5831bb](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/f5831bbaca85ea4ccf6aadcfb5e8f6997499e99f))
+
+# [3.6.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.5.0...v3.6.0) (2023-04-17)
+
+
+### Features
+
+* refactor again ([41e673a](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/41e673a69662f163f90ca48d825db202a7de7b00))
+
+# [3.5.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.4.1...v3.5.0) (2023-04-17)
+
+
+### Features
+
+* refactor release asset ([bd8b5b6](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/bd8b5b6bac4cde8aa9bc0865bb339c4ea185744d))
+
+## [3.4.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.4.0...v3.4.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* **people:** remove people comments ([fa9d8c4](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/fa9d8c449d73e162ba51b621990cfb177953dd9d))
+
 # [3.4.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.3.0...v3.4.0) (2023-04-17)
 
 
