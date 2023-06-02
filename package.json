@@ -1,6 +1,6 @@
 {
     "name": "@wsuwebteam/wsuwp-plugin-workflow-test",
-    "version": "0.0.0-semantic-release",
+    "version": "3.11.0",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -23,6 +23,9 @@
     },
     "homepage": "https://github.com/wsuwebteam/wsuwp-plugin-workflow-test#readme",
     "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/npm": "^10.0.3",
         "@wordpress/scripts": "^23.5.0"
     }
 }

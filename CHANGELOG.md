@@ -1,3 +1,15 @@
+# [3.11.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.10.0...v3.11.0) (2023-06-02)
+
+
+### Bug Fixes
+
+* ignore npmrc ([9ade3e8](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/9ade3e8cdf56fcaa48be1494dd26d42dcf7eb5d5))
+
+
+### Features
+
+* try updating package.json version ([8f8acd5](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/8f8acd59b7f8c3778e692506ac3e0380a07f837d))
+
 # [3.10.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.9.0...v3.10.0) (2023-06-02)
 
 
