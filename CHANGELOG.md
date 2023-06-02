@@ -1,3 +1,11 @@
+# [3.9.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.8.1...v3.9.0) (2023-06-02)
+
+
+### Features
+
+* **oak:** Add oak ([#5](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/issues/5)) ([1c4f2ee](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/1c4f2ee09d58adf549bdb32d710568e54dabeae1))
+* **pine:** Add pine ([#4](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/issues/4)) ([63a3920](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/63a3920bbd75698b7fcc781cc733bf6e18db938e))
+
 ## [3.8.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.8.0...v3.8.1) (2023-04-17)
 
 
