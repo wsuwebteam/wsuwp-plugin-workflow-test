@@ -12,6 +12,10 @@
         "type": "git",
         "url": "git+https://github.com/wsuwebteam/wsuwp-plugin-workflow-test.git"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com",
+        "tag": "latest"
+    },
     "author": "",
     "license": "ISC",
     "bugs": {
