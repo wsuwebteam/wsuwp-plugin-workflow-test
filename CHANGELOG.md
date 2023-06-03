@@ -1,3 +1,19 @@
+# [3.12.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.11.1...v3.12.0) (2023-06-03)
+
+
+### Features
+
+* one more test ([2ceb529](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/2ceb5293084102980a5e89316b86cf52c7c5cb67))
+
+## [3.11.1](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.11.0...v3.11.1) (2023-06-03)
+
+
+### Bug Fixes
+
+* renew package-lock ([ce968f6](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/ce968f6f0eaa1c67aebbcb689885b1160f519a18))
+* try removing packages from yml ([b96de16](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/b96de16be9c0aa10c18d3e0c18678b5d5ce8aa1b))
+* update package-lock again ([e6b6cb5](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/commit/e6b6cb5db7a589727f513c46980db39d8e33bc6b))
+
 # [3.11.0](https://github.com/wsuwebteam/wsuwp-plugin-workflow-test/compare/v3.10.0...v3.11.0) (2023-06-02)
 
 
